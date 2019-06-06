@@ -20,6 +20,42 @@ class GuestPagesTest extends TestCase
     }
 
     /**
+     * Login page test.
+     *
+     * @return void
+     */
+    public function testLoginLoads()
+    {
+        $response = $this->get('/login');
+
+        $response->assertStatus(200);
+    }
+
+    /**
+     * Password reset page test.
+     *
+     * @return void
+     */
+    public function testPasswordResetLoads()
+    {
+        $response = $this->get('/password/reset');
+
+        $response->assertStatus(200);
+    }
+
+    /**
+     * Register page test.
+     *
+     * @return void
+     */
+    public function testRegisterLoads()
+    {
+        $response = $this->get('/register');
+
+        $response->assertStatus(200);
+    }
+
+    /**
      * Dashboard test for guest access.
      *
      * @return void
