@@ -19,11 +19,11 @@ class EventServiceProvider extends ServiceProvider
             SendEmailVerificationNotification::class,
         ],
         'Illuminate\Auth\Events\Login' => [
-            'Code\Listeners\LoggedIn',
+            'Core\Listeners\LoggedIn',
         ],
 
         'Illuminate\Auth\Events\Logout' => [
-            'Code\Listeners\LoggedOut',
+            'Core\Listeners\LoggedOut',
         ],
     ];
 

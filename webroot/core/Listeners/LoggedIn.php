@@ -1,6 +1,6 @@
 <?php
 
-namespace Code\Listeners;
+namespace Core\Listeners;
 
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Login;

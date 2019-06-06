@@ -1,6 +1,6 @@
 <?php
 
-namespace CoderStudios\Listeners;
+namespace Core\Listeners;
 
 use Artisan;
 use Illuminate\Auth\Events\Logout;
