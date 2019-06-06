@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "856e888dc0806a9fd2578ca5367fa999",
+    "content-hash": "55cfc375491d5258dc8e094a939ec7f2",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3240,6 +3240,51 @@
                 "laravel-dump-server"
             ],
             "time": "2018-10-04T07:22:24+00:00"
+        },
+        {
+            "name": "dczajkowski/auth-tests",
+            "version": "5.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DCzajkowski/auth-tests.git",
+                "reference": "60b0a97d7bcd5e44c10d03255ac1d0a56388506c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DCzajkowski/auth-tests/zipball/60b0a97d7bcd5e44c10d03255ac1d0a56388506c",
+                "reference": "60b0a97d7bcd5e44c10d03255ac1d0a56388506c",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DCzajkowski\\AuthTests\\AuthTestsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/AuthTestsServiceProvider.php",
+                    "src/Console/Commands/AuthTestsMakeCommand.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dariusz Czajkowski",
+                    "email": "dare.czajkowski@gmail.com",
+                    "homepage": "http://dczajkowski.com"
+                }
+            ],
+            "description": "Authentication tests for Laravel built-in authentication module.",
+            "time": "2019-03-30T04:05:44+00:00"
         },
         {
             "name": "doctrine/instantiator",
