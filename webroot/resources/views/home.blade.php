@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in! This page doesn't check if you're a verified user. Other logged in pages will.
                 </div>
             </div>
         </div>
