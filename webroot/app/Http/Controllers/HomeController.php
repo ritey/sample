@@ -13,15 +13,25 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth')->except('index');
     }
 
     /**
-     * Show the application dashboard.
+     * Show the application homepage.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
+    {
+        return view('welcome');
+    }
+
+    /**
+     * Show the application dashboard for logged in users.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function home()
     {
         return view('home');
     }
